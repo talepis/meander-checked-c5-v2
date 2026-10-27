@@ -1,0 +1,54 @@
+{
+  "n": 29,
+  "modulus": 1993,
+  "residue": 919,
+  "seconds": 350.6653499007225,
+  "peak_dense": 5681094181,
+  "dtype": "uint16",
+  "independent_of_projected_sources": true,
+  "accumulation_bound": 63744,
+  "regressions": [
+    {
+      "n": 2,
+      "modulus": 1993,
+      "residue": 2,
+      "seconds": 7.959827780723572e-05,
+      "peak_dense": 0,
+      "dtype": "uint16"
+    },
+    {
+      "n": 8,
+      "modulus": 1993,
+      "residue": 1339,
+      "seconds": 0.1286786012351513,
+      "peak_dense": 44,
+      "dtype": "uint16"
+    },
+    {
+      "n": 12,
+      "modulus": 1993,
+      "residue": 818,
+      "seconds": 0.0689132995903492,
+      "peak_dense": 1214,
+      "dtype": "uint16"
+    },
+    {
+      "n": 18,
+      "modulus": 1993,
+      "residue": 1000,
+      "seconds": 0.2737209014594555,
+      "peak_dense": 241515,
+      "dtype": "uint16"
+    }
+  ],
+  "mode": "modular",
+  "worker_completed": true,
+  "threads": 6,
+  "source_sha256_digest": "d0fa4735027c2da0b7a43a0d286fceaaca428e5cb3b6bbabdfe2ad13784386aa",
+  "setup_and_regression_seconds": 9.395365800708532,
+  "worker_elapsed_seconds": 360.07145779952407,
+  "os_peak_working_set_bytes": 21031669760,
+  "os_peak_commit_bytes": 21034176512,
+  "allocation_checks": 11875,
+  "largest_checked_allocation_bytes": 7691968512
+}

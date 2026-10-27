@@ -1,0 +1,348 @@
+{
+  "status": "PASS",
+  "orders": [
+    1,
+    26
+  ],
+  "rows": [
+    {
+      "n": 1,
+      "Mn": "1",
+      "seconds": 0.00024359999224543571,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.001363799994578585
+        }
+      ],
+      "peak_coefficient_bytes": 0
+    },
+    {
+      "n": 2,
+      "Mn": "2",
+      "seconds": 0.00025270000332966447,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.0013569000002462417
+        }
+      ],
+      "peak_coefficient_bytes": 0
+    },
+    {
+      "n": 3,
+      "Mn": "8",
+      "seconds": 0.17963549998239614,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.18076409999048337
+        }
+      ],
+      "peak_coefficient_bytes": 0
+    },
+    {
+      "n": 4,
+      "Mn": "42",
+      "seconds": 0.05015199998160824,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.05145579998497851
+        }
+      ],
+      "peak_coefficient_bytes": 4
+    },
+    {
+      "n": 5,
+      "Mn": "262",
+      "seconds": 0.03957660001469776,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.04102860001148656
+        }
+      ],
+      "peak_coefficient_bytes": 10
+    },
+    {
+      "n": 6,
+      "Mn": "1828",
+      "seconds": 0.01432849999400787,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.015487500000745058
+        }
+      ],
+      "peak_coefficient_bytes": 22
+    },
+    {
+      "n": 7,
+      "Mn": "13820",
+      "seconds": 0.027486900013173,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.02888549998169765
+        }
+      ],
+      "peak_coefficient_bytes": 48
+    },
+    {
+      "n": 8,
+      "Mn": "110954",
+      "seconds": 0.03747279997332953,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.038572599994949996
+        }
+      ],
+      "peak_coefficient_bytes": 108
+    },
+    {
+      "n": 9,
+      "Mn": "933458",
+      "seconds": 0.060704999981680885,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.06187190001946874
+        }
+      ],
+      "peak_coefficient_bytes": 242
+    },
+    {
+      "n": 10,
+      "Mn": "8152860",
+      "seconds": 0.07379279998713173,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.07500939999590628
+        }
+      ],
+      "peak_coefficient_bytes": 532
+    },
+    {
+      "n": 11,
+      "Mn": "73424650",
+      "seconds": 0.11178230002406053,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.11308470001677051
+        }
+      ],
+      "peak_coefficient_bytes": 1456
+    },
+    {
+      "n": 12,
+      "Mn": "678390116",
+      "seconds": 0.13107279999530874,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.1322556999803055
+        }
+      ],
+      "peak_coefficient_bytes": 4200
+    },
+    {
+      "n": 13,
+      "Mn": "6405031050",
+      "seconds": 0.14250219997484237,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.14368479998665862
+        }
+      ],
+      "peak_coefficient_bytes": 11294
+    },
+    {
+      "n": 14,
+      "Mn": "61606881612",
+      "seconds": 0.1965245000028517,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.19771129998844117
+        }
+      ],
+      "peak_coefficient_bytes": 28312
+    },
+    {
+      "n": 15,
+      "Mn": "602188541928",
+      "seconds": 0.24664500000653788,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.24777980000362732
+        }
+      ],
+      "peak_coefficient_bytes": 74412
+    },
+    {
+      "n": 16,
+      "Mn": "5969806669034",
+      "seconds": 0.2994275000237394,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.3007209000061266
+        }
+      ],
+      "peak_coefficient_bytes": 186116
+    },
+    {
+      "n": 17,
+      "Mn": "59923200729046",
+      "seconds": 0.35140479999245144,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.35263680000207387
+        }
+      ],
+      "peak_coefficient_bytes": 460528
+    },
+    {
+      "n": 18,
+      "Mn": "608188709574124",
+      "seconds": 0.4203426000021864,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.4215085000032559
+        }
+      ],
+      "peak_coefficient_bytes": 1111056
+    },
+    {
+      "n": 19,
+      "Mn": "6234277838531806",
+      "seconds": 0.5139784000057261,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.5151040000200737
+        }
+      ],
+      "peak_coefficient_bytes": 2626260
+    },
+    {
+      "n": 20,
+      "Mn": "64477712119584604",
+      "seconds": 0.6286849000025541,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.6298784000100568
+        }
+      ],
+      "peak_coefficient_bytes": 6684460
+    },
+    {
+      "n": 21,
+      "Mn": "672265814872772972",
+      "seconds": 0.9007221999927424,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 0.9019632999843452
+        }
+      ],
+      "peak_coefficient_bytes": 15472208
+    },
+    {
+      "n": 22,
+      "Mn": "7060941974458061392",
+      "seconds": 1.1270241999882273,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 1.1283517999981996
+        }
+      ],
+      "peak_coefficient_bytes": 37565508
+    },
+    {
+      "n": 23,
+      "Mn": "74661728661167809752",
+      "seconds": 1.6512937000079546,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 1.6525494999950752
+        }
+      ],
+      "peak_coefficient_bytes": 90777700
+    },
+    {
+      "n": 24,
+      "Mn": "794337831754570367812",
+      "seconds": 2.5953272999904584,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 2.596891699999105
+        }
+      ],
+      "peak_coefficient_bytes": 205464256
+    },
+    {
+      "n": 25,
+      "Mn": "8499066628515413229282",
+      "seconds": 4.469624399993336,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 4.471204100002069
+        }
+      ],
+      "peak_coefficient_bytes": 487106036
+    },
+    {
+      "n": 26,
+      "Mn": "91412898898828176826244",
+      "seconds": 8.716776599991135,
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PASS",
+          "seconds": 8.719688000011956
+        }
+      ],
+      "peak_coefficient_bytes": 1245548488
+    }
+  ],
+  "scope": "Correctness tests of the final entry point, not a timed comparison with JIT excluded."
+}

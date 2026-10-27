@@ -1,0 +1,20 @@
+THIRD-PARTY NOTICES AND SCOPE OF LICENSE
+
+The MIT LICENSE applies to the author's original source and accompanying
+release documentation. It does not change the licenses of separately
+installed NumPy, Numba, psutil, Python, OpenMP runtime, a C compiler, or any
+other dependency. See each upstream project for its own terms. The pinned
+packages are not vendored into this archive.
+
+This package does not include Andrew Howroyd's program, other researchers'
+code, the university computing infrastructure, credentials or downloaded
+journal articles. OEIS sequence facts and bibliographic references are
+acknowledged independently of the software license. The compact closing-map
+cache is produced from the author's algorithmic sources and its original
+SHA-256 is verified on load. Before publication the human author should
+confirm rights in every source and data item; the present technical review
+is not a legal opinion.
+
+AI assistance was used in assembling code wrappers, documents, and checks.
+The human author is responsible for inspecting the final release and for
+any mathematical claims and OEIS submission.

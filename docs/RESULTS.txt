@@ -1,0 +1,19 @@
+AUDITED CLOSED MEANDER VALUES (candidate OEIS extension)
+
+n   M_n                                modular evidence
+29  116936079373841873422508566      10 accepted original-transfer passes
+30  1279842888607976889797535044     10 accepted original-transfer passes
+31  14058963484756608748809713192    3 original-transfer CRT passes
+32  154967080111946539652848747626   3 checked-V2 CRT passes
+33  1713661620837603791268481065446  3 checked-V2 CRT passes
+34  19007633817297768906172279813820 3 checked-V2 CRT passes
+
+The complete n=0..34 table is data/b005315.txt. The external OEIS comparison
+currently included with this release is n=0..28. Records and reconstructed
+bounds are in evidence/CRT_CERTIFICATES.json; run tools/verify_certificates.py.
+The large-order historical logs in evidence/summaries provide per-pass
+elapsed time, RSS, coefficient-layer memory and matrix I/O where captured.
+These are measurements of historical server runs, not benchmarks of this
+new public wrapper. M29..M31 are independent of the later C5/V2 identities;
+M32..M34 are not. CRT uniqueness requires correctly computed residues.
+M35 is not in this release.

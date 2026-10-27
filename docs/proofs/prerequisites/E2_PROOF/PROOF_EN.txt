@@ -1,0 +1,248 @@
+THEOREM: EXACT BILINEAR MIXED INTERACTION AT EXCESS TWO
+
+Scope. This establishes the bilinear reconstruction formula only. It does
+not establish the separate extremal/common-leaf-level maximum conjecture.
+The proof uses the exact four-move transfer and the already established
+V0 and V1 formulas. All variables below are integers or exact rationals.
+
+Definitions.
+
+Write P=D_0 ( D_1 ( ... ( D_h and Q=E_0 ( E_1 ( ... ( E_h.
+Let u_i,v_i be the root counts. Let sigma(P) be the sum of (degree+1)^2
+over all closed vertices. Set
+
+ s(P)=sigma(P)-sum_i u_i,
+ r_i(P)=sum of degrees of the roots of D_i,
+ f(P)=(s(P),r_0(P),...,r_h(P)),
+ K(u,v)=product_i binom(u_i+v_i,u_i),
+ b_i=v_i/(u_i+1), a_i=u_i/(v_i+1).
+
+For a closed tree T put alpha(T)=sigma(T)-1, beta(T)=degree(T).
+Deleting T as an external root subtracts alpha(T) from s and beta(T)
+from the root-degree sum at its level, regardless of T's size or shape.
+
+Define H(u,v) by
+
+ H_ss=K,
+ H_{s,rQ_j}=K*a_j,
+ H_{rP_i,s}=K*b_i,
+ H_{rP_i,rQ_j}=K*b_i*a_j for i!=j,
+ H_{rP_i,rQ_i}=K.
+
+Then, for all prefixes P,Q of the given root profiles, there exist
+one-sided functions A_{u,v}(P), B_{u,v}(Q) such that
+
+                 V2(P,Q)=A_{u,v}(P)+B_{u,v}(Q)+f(P)^T H(u,v) f(Q).
+
+The functions retain the full ordered prefixes. No claim that they are
+determined by f is made. For any actual anchors P0,Q0 of these profiles,
+subtracting four instances yields
+
+ V2(P,Q)=V2(P,Q0)+V2(P0,Q)-V2(P0,Q0)
+       +(f(P)-f(P0))^T H(u,v) (f(Q)-f(Q0)).
+
+We prove the stronger first assertion, allowing different lengths within
+a profile. V2 is always evaluated at a+b-h+4 for its own state.
+
+LEMMA 1. AFFINE FORCING AND ROOT EXCURSIONS.
+
+Let J=T1 V1+T2 V0 be the incoming positive-excess source for V2.
+At fixed root profiles J is a sum of a function of P and a function of Q.
+Moreover, in an internal deterministic excursion of a single external
+root it is affine in the shape features of the unchanged opposite base.
+
+Verification from the four moves is as follows. Mixed DD inverse images
+are indexed by a chosen terminal root on either side. Their V1 values
+are summed. The sum of their V0 coefficients is
+
+ B=L*[binom(x+y,x+1)+binom(x+y,y+1)],
+ L=product_{l<h} binom(u_l+v_l,u_l), x=u_h, y=v_h.
+
+The resulting mixed-DD sum equals a profile-only constant plus
+
+ B*(s(P)+s(Q))
+ +sum_{l<h} B*[b_l*r_l(P)+a_l*r_l(Q)]
+ +L*[binom(x+y,x+2)+binom(x+y,x)]*r_h(P)
+ +L*[binom(x+y,y+2)+binom(x+y,x)]*r_h(Q)
+ +L*sum_{k=0}^{x-1} binom(y+k,y)*degree(P-root k+1)
+ +L*sum_{k=0}^{y-1} binom(x+k,x)*degree(Q-root k+1).
+
+To check this identity directly, insert the known linear V1 formula in
+each inverse image; all lower-level factors remain unchanged, the new
+top level has an empty opposite forest, and the root index sums are
+sum_{k=0}^{m-1} binom(c+k,c)=binom(c+m,c+1). The two last sums retain
+the only ordered root-degree dependence. In particular there are no
+products of a P shape feature and a Q shape feature.
+
+The remaining T1 predecessors occur when the terminal forest on one
+side is empty. They are exactly V1 for the opposite prefix closed by
+one ')' and the empty terminal '(' removed on this side. Closing a
+forest with c roots changes s by c(c+3), adds c to the preceding
+root-degree sum, and increments its preceding root count. These are
+profile-dependent constants in the affine V1 formula. Thus they too
+are affine and separated. T2 V0 depends only on the profiles after
+closing both final '(' and is shape independent.
+
+Finally, reverse zero-excess moves act as follows. If the terminal
+P forest has a last root T, remove its final ')' and append '(' to Q.
+The state becomes (A '(' children(T),B '('), where A is P without T
+and B=Q. Until this new level is completely erased the opposite top
+forest is empty; hence the zero-excess reverse path is deterministic.
+After the interior is erased, remove the two final '(' and return to
+(A,B). A symmetric branch exists for a terminal Q root. If both
+terminal forests are empty, only simultaneous removal of the two
+final '(' is possible. Consequently reverse histories shuffle whole
+root excursions at each level, preserving the order on each side.
+
+LEMMA 2. EXACT OPPOSITE-SHAPE PART OF ONE EXCURSION.
+
+Take a base A,B at common height i, with terminal root counts x,y and
+K0=K(profile(A),profile(B)). Attach a P-side root T at level i.
+Let C_T(A,B) be the sum of J along the internal reverse excursion,
+starting at (A '(' children(T),B '(') and ending before (A,B).
+Let C_leaf be the same quantity with T replaced by a single leaf.
+The part of C_T-C_leaf depending on the shape of B is exactly
+
+ K0 { [alpha(T)+beta(T)*y/(x+1)]
+              [s(B)+sum_{l<i} u_l*r_l(B)/(v_l+1)]
+       +[x*alpha(T)/(y+1)+beta(T)]*r_i(B) }.                 (1)
+
+The difference between C_T-C_leaf and (1) is independent of B shape
+at fixed base profiles. It can depend arbitrarily on T and A.
+
+Proof with all coefficient corrections. Consider a state
+(A '(' X,B '(') where the top forest X has c roots. Its extra level
+has profiles c,0, so the mixed-DD coefficient B in Lemma 1 is K0*c.
+The inverse T1 move closing the P side contributes V1(A '(' X ')',B).
+Its V0 coefficient is K0*A0, where A0=(x+y+1)/(x+1).
+When c=0 there is also the move closing Q, contributing V1(A,B '()'),
+with V0 coefficient K0*B0, where B0=(x+y+1)/(y+1).
+Thus the coefficient of s(B) in J/K0 is exactly
+
+                         c+A0+1_{c=0} B0.                 (2)
+
+For a lower r_l(B), l<i, all those predecessor profiles have unchanged
+level l. Its coefficient is (2) times u_l/(v_l+1).
+For r_i(B), closing P changes x to x+1 and closing Q changes y to y+1.
+The coefficient in J/K0 is therefore exactly
+
+ x*c/(y+1)+A0*(x+1)/(y+1)+1_{c=0} B0*x/(y+2).             (3)
+
+The ordered-degree terms in Lemma 1 occur at the new top level and
+contain no shape feature of B. T2 V0 has no such feature either.
+
+Let S(T;x,y) be the coefficient of s(B) in C_T/K0. Write d=degree(T)
+and let T_1,...,T_d be the ordered children of T. The outer-level
+states have c=d,d-1,...,0. Each child T_k contributes its own internal
+excursion with base profiles k-1,0 at the next level. Hence (2) gives
+
+ S(T;x,y)=d(d+1)/2+(d+1)A0+B0+sum_{k=1}^d S(T_k;k-1,0).
+
+Induction on the number of vertices gives
+
+ S(T;x,y)=sigma(T)+(d+1)(A0-1)+B0.
+
+Indeed S(T_k;k-1,0)=sigma(T_k)+k; summing k supplies the second
+d(d+1)/2 and sigma(T)=(d+1)^2+sum sigma(T_k). The leaf base case is
+S(leaf;x,y)=A0+B0. Subtracting it yields
+
+ Delta S=alpha(T)+beta(T)*y/(x+1).                         (4)
+
+At all strictly deeper states the coefficient of r_i(B) is exactly
+x/(y+1) times the s(B) coefficient, because the level i profiles stay
+x,y. Comparing (3) with x/(y+1) times (2), only the d+1 outer states
+contribute a correction. The full r_i coefficient R is
+
+ R=x*S/(y+1)+(d+1)A0/(y+1)
+                +B0*x*[1/(y+2)-1/(y+1)].
+
+Subtracting the leaf expression and using (4) gives
+
+ Delta R=x*alpha(T)/(y+1)+beta(T),                        (5)
+
+since [xy+x+y+1]/[(x+1)(y+1)]=1. Equations (4),(5) and the unchanged
+lower-level ratios prove (1). This also proves that no omitted term
+can depend on the full shape of B beyond the stated affine features.
+
+LEMMA 3. PASCAL IDENTITY FOR H.
+
+Keep all lower-level profiles fixed, and vary the terminal counts x,y.
+For x,y>0 the matrix H obeys entrywise
+
+                       H(x,y)=H(x-1,y)+H(x,y-1).          (6)
+
+Every entry not involving the last root coordinate is a fixed constant
+times L*binom(x+y,x). Entries in the last row outside its diagonal
+are fixed constants times
+
+ L*binom(x+y,x)*y/(x+1)=L*binom(x+y,x+1),
+
+and entries in the last column outside its diagonal are fixed constants
+times
+
+ L*binom(x+y,x)*x/(y+1)=L*binom(x+y,x-1).
+
+The last diagonal is L*binom(x+y,x). Each obeys the ordinary Pascal
+identity, proving (6), including arbitrary lower-level coordinates.
+
+If x=0,y>0, the difference H(0,y)-H(0,y-1) is supported on its last
+row and diagonal. Every actual P with x=0 has r_h(P)=0, so its product
+with that matrix difference vanishes. The analogous statement holds
+for y=0. When x=y=0 the last feature coordinates vanish on both sides
+and the remaining submatrix is precisely H for height h-1.
+
+THEOREM PROOF.
+
+Set C(P,Q)=f(P)^T H(u,v)f(Q) and R(P,Q)=V2(P,Q)-C(P,Q).
+We prove that R is separated at each fixed profile by induction on
+h+sum_i(u_i+v_i), with the empty state as base case. This integer
+decreases when an external root is removed, or when an empty terminal
+level is dropped. The proof is simultaneous over all possible internal
+tree shapes and all lengths; no bound on either is assumed.
+
+Suppose both terminal forests are nonempty, with final roots T,U.
+Write P-=P without T, Q-=Q without U, and
+delta_T=(alpha(T),0,...,0,beta(T)), delta_U analogously. The exact
+reverse recurrence and deterministic excursions give
+
+ V2(P,Q)=V2(P-,Q)+V2(P,Q-)+J(P,Q)
+                     +C_T(P-,Q)+C_U(Q-,P).               (7)
+
+Here C_U uses the symmetric, Q-active convention. By (6),
+
+ C(P,Q)-C(P-,Q)-C(P,Q-)
+ =delta_T^T H(u-e_h,v)f(Q)
+                  +f(P)^T H(u,v-e_h)delta_U.             (8)
+
+The first term in (8) is exactly expression (1) for C_T, including
+each lower-level coefficient and the special last diagonal K0.
+The second is exactly its symmetric counterpart for C_U. Therefore
+Lemma 2 implies that each excursion minus its term of (8) equals its
+leaf excursion plus a function of its active-side shape only.
+The leaf excursion consists of a single state, so Lemma 1 says it
+is separated in the two base shapes. J is separated by Lemma 1 too.
+
+Subtracting (8) from (7) thus gives
+
+ R(P,Q)=R(P-,Q)+R(P,Q-)+A(P)+B(Q),                        (9)
+
+where A,B are some functions at the current fixed profiles; their
+explicit values are irrelevant. The inductive hypothesis makes both
+R terms on the right separated. Composing a one-sided function with
+root deletion is still one-sided. Hence the right side, and R, are
+separated.
+
+If only one terminal forest is nonempty, there is only its deletion
+branch in (7). The boundary statement of Lemma 3 makes (8) valid with
+only that branch. The same argument proves separation. If both
+terminal forests are empty and h>0, the reverse recurrence is the
+previous-height value plus J; C restricts to its previous-height
+value by Lemma 3, so separation follows by induction and Lemma 1.
+For h=0 with no roots the state is empty, V2=0 and C=0.
+
+This completes the induction, proves the separated-residual theorem,
+and consequently proves exact anchor reconstruction for all lengths.
+
+Independent confirmation: DERIVATION.txt also proves the same H by
+pairing root excursions and exact lattice-path convolution identities.
+That derivation is not needed for the inductive proof above.

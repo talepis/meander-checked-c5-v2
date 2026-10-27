@@ -1,0 +1,245 @@
+EXACT FACTORIZATION OF THE EXCESS-TWO TREE RESPONSES
+AND ITS APPLICATION TO THE EXCESS-THREE SOURCE
+13 October 2026
+
+Scope. These identities follow algebraically from the previously established
+J2 source and forest Green operator. Finite tests are additional checks, not
+their proof. No extremal hypothesis is used in this new implementation.
+No claim of bibliographic priority is made.
+
+1. A closed response for an arbitrary rooted tree
+
+For a rooted plane tree T let d be its root degree, let its ordered children
+be T1,...,Td, and put sigma(T)=sum over its vertices of (degree+1)^2.
+Associate four integers (sigma,d,U,V) with T. A leaf has (1,0,0,0).
+For child values (sigma_j,d_j,U_j,V_j), define
+
+ A=sum_j(sigma_j-1), D=sum_j d_j,
+ t=d(d+1)/2, s2=d(d+1)(2d+1)/6,
+ cross=sum_{j<k}(sigma_j-1)(sigma_k-1),
+ sigma=(d+1)^2+sum_j sigma_j,
+ U=sum_j(U_j+V_j)+(d^2+2d-1)A+(3d+4)D+cross
+     +(8t^2+27s2+49t)/6,
+ V=(d+1)sigma+D-s2-1.
+
+The numerator in the last term of U is divisible by six: it equals
+sum_{j=1}^d(8j^3+27j^2+49j), whose summands are divisible by six.
+
+Take ordered ballot bases A0,B0 at equal height i, with root profiles u,v,
+terminal counts x=u_i,y=v_i, and L=product_{l<i} binom(u_l+v_l,u_l).
+Let
+ K=L binom(x+y,x), KA=L binom(x+y+1,x+1),
+ KB=L binom(x+y+1,x), KAB=L binom(x+y+2,x+1),
+ KAy=L binom(x+y+1,x+2).
+Here VA=V1(A0+'()',B0), VB=V1(A0,B0+'()'), and W=V1(A0,B0).
+Let C_T be the sum of J2 along the deterministic interior reverse path
+of T above these bases, excluding the ending base state. Then exactly
+
+ C_T=(sigma-d-1)W+(d+1)(VA+KAB)+VB
+       +K U+KA V+KB(sigma-1)+KAy d(d+1)/2.                 (1)
+
+This is a seven-coordinate tree response. The coordinates are
+(sigma-d-1,d+1,1,U,V,sigma-1,t). Child permutation does not change them.
+Permutation of roots in the external forests can still change V2.
+
+2. Inductive proof of (1)
+
+Write F_k=T1...Tk, alpha_j=sigma_j-1, A_k=sum_{j<=k}alpha_j,
+D_k=sum_{j<=k}d_j, and t_k=k(k+1)/2.
+The interior of T decomposes without overlap into the d+1 boundary states
+(A0+'('+F_k,B0+'('), k=0,...,d), and each child's interior excursion,
+with bases (A0+'('+F_{j-1},B0+'(').
+
+Substitution in the proved J2 inverse-move formula gives the following
+boundary-state source:
+
+ J_k=k W+VA+KAB+1[k=0]VB
+       +KA(A_k+k(k+3)+t_k)+KB k+KAy k
+       +K(k A_k+2D_k+(4k^3+12k^2+20k)/6).                (2)
+
+To verify the inverse-root part of this substitution explicitly, for root j
+put w=k-j. Its V1 inverse image has the same base contributions W, and
+its additional contribution is
+ KA*j+KB+K(j^2+j+2d_j+4+A_k+w(w+3)).
+Summing over j gives k W+KA*t_k+KB*k and the last K term of (2).
+The Q-ending-open inverse adds VA+KA(A_k+k(k+3))+KAy*k;
+the P-ending-open inverse occurs only at k=0 and adds VB;
+the excess-two inverse adds KAB. This proves (2) directly.
+
+For a child j put a=j-1 and A_<j=sum_{l<j}alpha_l, D_<j=sum_{l<j}d_l.
+The three V1 quantities appearing in its inductive response are
+
+ W_j=W+KA*j+KB+K(j^2-1+A_<j),
+ VA_j=W+KA*(j+1)+KB+K(j(j+2)+A_<j),
+ VB_j=j W+KA*t_j+KB*(j+1)
+         +K(loc(j-1,1)+j*A_<j+D_<j),
+
+where loc(j-1,1)=(4j^3+9j^2+11j-6)/6. Its local binomials are
+K_j=K, KA_j=K, KB_j=K*j, KAB_j=K*(j+1), KAy_j=0.
+All formulas follow from the exact V1 leaf recurrence and its affine
+shape terms; no V2 values are assumed.
+
+Add (2) for k=0,...,d and (1) for each child with these local quantities.
+The coefficients of W, VA+KAB, VB, KB and KAy become respectively
+sigma-d-1, d+1, 1, sigma-1, t.
+The KA coefficient is
+(d+1)A+D+2s2+5t+d=(d+1)sigma+D-s2-1=V.
+In the K coefficient each alpha_j has coefficient d^2+2d-1, each d_j
+has coefficient 3d+4, and the mixed terms give cross. The shape-free
+summand at child index j is (8j^3+27j^2+49j)/6. Adding child U_j+V_j
+therefore gives exactly U above. This proves the induction. The leaf
+case is J2(A0+'(',B0+'(')=VA+VB+KAB, also exactly (1).
+
+3. An explicit ordered feature factorization of the entire V2 coefficient
+
+For a prefix P, retain its forests at levels 0,...,h and their root order.
+For root r at level i put alpha=sigma(T)-1, beta=d(T), and let S_before
+be the sum of alpha for all earlier roots (earlier levels included).
+Let R_before,l be the sum of beta at earlier roots of level l.
+Append to Phi_u(P) the following 9+2i integers for this root:
+
+ alpha,beta,U,V,beta(beta+1)/2,alpha*S_before,beta*S_before,
+ (alpha*R_before,l,beta*R_before,l) for l=0,...,i.
+
+Thus dim Phi_u=sum_i u_i(9+2i); it depends on the root profile and is
+not a fixed constant. Leaf slots vanish and are stored sparsely.
+Let f(P)=(sum_roots alpha, sum_level0 beta,...,sum_levelh beta).
+The old proved mixed interaction H(u,v) is unchanged.
+
+Insert (1) and the explicit J2 source into the forest Green formula.
+Evaluate the Q side first at the all-leaf mathematical anchor. Boundary
+sources are affine in the P shape data. In root excursions, the V1 base
+terms multiply alpha or beta of the active root; this produces exactly
+the ordered alpha*S_before, beta*S_before, alpha*R_before,l and
+beta*R_before,l slots above. The remaining terms of (1) are linear in
+alpha,beta,U,V,t. Q leaf excursions add only affine P terms. Consequently
+
+ V2(P,Q)=B(u,v)+Phi_u(P).Gamma(u,v)+Phi_v(Q).Gamma(v,u)
+                  +f(P)^T H(u,v) f(Q).                 (3)
+
+B is V2 at the all-leaf anchors; these anchors are evaluated at their
+own lengths. Gamma is constructed by the finite weighted sums in
+factor_math.kernel, not by fitting observed coefficients. profile_kernel
+is its compiled integer implementation. The mixed term is justified by
+the previous generic mixed theorem, including different-length anchors.
+Equation (3) is therefore an identity for arbitrary ordered trees, not
+only the tested orders. Neither known Mn nor sampled V2 coefficients
+are inputs to this formula.
+
+4. Application to excess three: what has and has not been factored
+
+The proved source is J3=T1 V2+T2 V1. T1 consists of the two ending-open
+inverse images and one inverse image for each terminal root on each
+side; T2 is the simultaneous closing of both prefixes when h>0.
+Substituting (3) factors each T1 summand. Grouping target rows by root
+profile allows the constant and Phi coefficients to be accumulated
+over the inverse Q images once, then contracted with each P row.
+The symmetrical half supplies the inverse P images. T2 V1 keeps its
+already proved expression. The e4 closing source T2 V2 also uses (3).
+
+The experimental full program evaluates V3=G[J3] using the retained
+zero-excess updates of its e3 arrays. It removes every stored e2 array.
+It DOES NOT remove e3 arrays or establish a fixed low-rank closed V3
+representation. The old feature-vector obstruction for V3 remains.
+For small row-profile groups, an equivalent collapsed root-grid Green
+recurrence applies (1) directly and avoids overly wide factor planes.
+Both implementations are compiled Numba kernels, not Python loops
+over the numerical coefficient grids.
+
+An additional exact factorization avoids repeating V2 for every inverse
+root. Write Q=B0+T_j+tail, where B0 contains all earlier terminal roots
+and T_j='('+children_j+')'. Let R be the root enclosing tail and let
+W be the root whose children are children_j followed by R. Then
+
+ I_j(Q)=B0+'('+interior(W),
+ V2(P+'(',I_j(Q))=V2(P,B0)+C_W(B0,P).                    (4)
+
+Proof. At the added level P has no closed roots. Until that level has
+been exhausted, its zero-excess reverse history is unique. Its visited
+states are precisely the interior excursion of W. The final removal
+of the two trailing opens returns to (P,B0). Expansion of the V2
+recurrence is therefore the base value plus that excursion's J2 sum.
+This proves (4), including the order of the arguments in C_W.
+
+All base values V2(P,B0) in (4) are entries of a single terminal root
+grid for P,Q. They are computed together by the collapsed Green
+recurrence. The response C_W is given by (1). Thus the inverse-root
+sum uses one V2 root grid, rather than a fresh V2 evaluation per root.
+
+W's four statistics require no traversal of children_j. For T_j's
+(sigma,d,U,V), recover
+ Achild=sigma-(d+1)^2-d,
+ Bchild=V-(d+1)sigma+d(d+1)(2d+1)/6+1.
+For the appended R=(sR,dR,UR,VR), alphaR=sR-1, put
+ F(d)=(8t_d^2+27s2_d+49t_d)/6. Direct subtraction of the parent
+recurrence before and after appending R gives
+
+ sigmaW=sigma+2d+3+sR, dW=d+1,
+ UW=U+UR+VR+(2d+3)Achild+3Bchild
+       +(d^2+4d+2)alphaR+(3d+7)dR+Achild*alphaR
+       +F(d+1)-F(d),
+ VW=(d+2)sigmaW+Bchild+dR-(d+1)(d+2)(2d+3)/6-1.
+
+Suffix sums of alpha, beta, U+V, and pairwise alpha products give
+each enclosing-tail root R by the same parent recurrence. All R and
+W statistics therefore take linear work in the number of terminal
+roots after their constituent tree statistics have been built.
+The closing boundary contribution when P ends in an unmatched open
+is evaluated separately as V2(P[:-1],Q+')'). The original proved
+T2 V1 source supplies the simultaneous-closing contribution.
+fused_half.py implements these identities. The experiment compares
+using (4) for small groups with using it for every group, in complete
+computations; it does not infer a speedup from the algebra alone.
+
+5. Arithmetic certificates and experimental range
+
+The full trial program accepts 4<=n<=22. Every source operation is
+integral; higher-field coefficients use the existing checked unsigned
+widths or arbitrary-precision integers. No floating-point interpolation.
+Before a target is allocated, its bound is the sum of actual predecessor
+maxima times inverse multiplicities, plus the actual exact source maximum.
+The new code does not use the conjectured tight global e2 maximum.
+
+For a queried V2 pair with m closed vertices in total and height h, a
+conservative rigorous bound used by the direct kernel is
+
+ D2(m,h)=(2m+h)*2^m*
+          [(m+2)*4*(m+h+2)^2*2^(m+1)+2^(m+2)].
+
+Indeed, along a zero-excess reverse path m'<=m and m'+h'<=m+h. There
+are at most m+2 excess-one inverse images, each bounded by the proved
+V1 bound 4*(m+h+2)^2*2^(m+1), plus a V0 term bounded by 2^(m+2).
+The Green weighted nonempty visits are at most (2m+h)*2^m. Since all
+actual direct-source and tree-response terms are nonnegative, this also
+bounds their accumulated partial sums. The sum over mapped inverse
+images is checked against its multiplicity times D2 before execution.
+Source3 is checked separately before its unsigned accumulation.
+
+For the profile-only kernel put N=sum_i(u_i+v_i) and A=N+h+4.
+The profile coefficient bound used is 64*A^5*2^N. In the Green expansion,
+the product of a reaching weight and its local root-shuffle binomial is
+at most the completed profile shuffle count, hence at most 2^N.
+Appending one or two leaf roots multiplies the local binomial by at most
+A or A^2. The affine leaf V1 quantities, divided by their shuffle count,
+are bounded by 4*A^2. At a boundary source the inverse-root part has
+at most N terms; its normalized affine part is bounded by 5*A^3.
+The two possible ending-open terms add at most 8*A^3, and the closing
+V0 term at most A^2. For leaf root excursions and their feature
+coefficients, substitution in (1) gives smaller bounds. Using 32*A^3
+uniformly therefore bounds each normalized boundary/excursion
+contribution;
+the collapsed grids have at most 3pq+2(p+q)+h+1 <= A^2 contributions.
+Copying a basic contribution into earlier root slots does not multiply
+a single slot's value. Summing gives 32*A^5*2^N; the implemented factor
+64 also covers primitive coefficient numerators and partial sums before
+exact divisions. The admissible N<=20, h<=30 domain is checked first.
+Actual coefficient-times-feature L1 bounds are then checked separately
+before sparse contractions; the profile-only bound is not used to
+license arbitrary shape-feature products.
+The recorded certificates, target checks, and full coefficient comparisons
+are included with the measurements. Windows commit limits and the system
+memory reserve stay active. These certificates do not extend the audited
+experimental implementation automatically beyond n=22.
+
+The performance result belongs in REPORT_GR.txt; algebraic factorization
+alone is not evidence of a speedup in a complete Mn computation.

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "path": "rectangle",
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PREDICTION_REJECTED",
+          "seconds": 1.2819510000117589,
+          "reason": "Injected first rectangle-cap rejection"
+        },
+        {
+          "mode": "proved",
+          "status": "PASS",
+          "seconds": 1.2144815000065137
+        }
+      ],
+      "result": "7060941974458061392"
+    },
+    {
+      "path": "paired",
+      "attempts": [
+        {
+          "mode": "predicted",
+          "status": "PREDICTION_REJECTED",
+          "seconds": 2.275360700004967,
+          "reason": "Predicted V2 cap rejected on exact decoded value"
+        },
+        {
+          "mode": "proved",
+          "status": "PASS",
+          "seconds": 5.243728000001283
+        }
+      ],
+      "result": "794337831754570367812"
+    }
+  ]
+}

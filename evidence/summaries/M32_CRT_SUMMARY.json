@@ -1,0 +1,80 @@
+{
+  "status": "M32_V2_CRT_AND_RECORD_CHECKS_PASS",
+  "n": 32,
+  "Mn": "154967080111946539652848747626",
+  "passes": 3,
+  "records": [
+    {
+      "modulus_decimal": "144115188075855871",
+      "residue_decimal": "12817835304474481",
+      "wall_seconds": 1169.009019122459,
+      "math_seconds": 1168.9754800824448,
+      "additional_compile_seconds": 14.430069327354431,
+      "setup_seconds": 60.150210921652615,
+      "sampled_peak_RSS_bytes": 265290973184,
+      "process_lifetime_maxRSS_bytes": 265405816832,
+      "matrix_disk_read_bytes": 0,
+      "matrix_disk_write_bytes": 0,
+      "matrix_disk_peak_bytes": 0,
+      "peak_retained_coefficient_layer_bytes": 180669916736
+    },
+    {
+      "modulus_decimal": "144115188075855869",
+      "residue_decimal": "12819985904729471",
+      "wall_seconds": 1133.2121934127063,
+      "math_seconds": 1133.1878106407821,
+      "additional_compile_seconds": 0,
+      "setup_seconds": 59.88008895423263,
+      "sampled_peak_RSS_bytes": 264880881664,
+      "process_lifetime_maxRSS_bytes": 264947384320,
+      "matrix_disk_read_bytes": 0,
+      "matrix_disk_write_bytes": 0,
+      "matrix_disk_peak_bytes": 0,
+      "peak_retained_coefficient_layer_bytes": 180669916736
+    },
+    {
+      "modulus_decimal": "64",
+      "residue_decimal": "42",
+      "wall_seconds": 1148.776626941748,
+      "math_seconds": 1148.751783565618,
+      "additional_compile_seconds": 6.050222069956362,
+      "setup_seconds": 59.923016710206866,
+      "sampled_peak_RSS_bytes": 213478432768,
+      "process_lifetime_maxRSS_bytes": 213476519936,
+      "matrix_disk_read_bytes": 0,
+      "matrix_disk_write_bytes": 0,
+      "matrix_disk_peak_bytes": 0,
+      "peak_retained_coefficient_layer_bytes": 142460096724
+    }
+  ],
+  "sum_wall_seconds": 3450.997839476913,
+  "sum_math_seconds": 3450.915074288845,
+  "peak_observed_RSS_bytes": 265405816832,
+  "moduli_product_decimal": "1329227995784915836010318912861241536",
+  "Catalan_squared_bound_decimal": "3084032361768198286846885615047204",
+  "source_integrity": {
+    "status": "PASS",
+    "protected_files": 1064
+  },
+  "independent_of_V2_identities": false,
+  "all_matrices_remained_in_RAM": true,
+  "execution_location": "university Linux server",
+  "threads": 16,
+  "M32_series_elapsed_seconds": 3656.955281496048,
+  "sum_setup_seconds": 179.95331658609211,
+  "sum_warmup_seconds": 21.685795109719038,
+  "local_certificate_check": {
+    "status": "CRT_RECORDS_AND_UNIQUENESS_PASS",
+    "n": 32,
+    "variant": "v2",
+    "reconstructed_decimal": "154967080111946539652848747626",
+    "passes": 3
+  },
+  "bundle_SHA256": "5e16c4e2c6a69c07be4f793f42fda302459957563c7054e3ecfaa2ba0b216179",
+  "deployed_manifest_SHA256": "57d97d64f85d11b055dda108047cee698dd95d2fc37cec1e2e6332e824407d00",
+  "historical_exact_checked_M32": {
+    "wall_seconds": 1129.3273130450398,
+    "RSS_bytes": 265376354304,
+    "scope": "Previous single exact run, not CRT or an independent M32 verifier"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "check_certificate.py": "8e4b75a580709b30ab6c08549e544eb4529192c9f0d64ad28abe73f2546294f2",
+  "self_tests.py": "445ebbff15df80d07202e333d19e1db7d84dc2ac828746fde365c424c606365b",
+  "worker.py": "b9a19ce855d1f469cd7626a11f466545f5571237831192a1cba93f60b94f987b",
+  "src/adaptive_exact.py": "dea1a4742b6baf958bf28030f6ce6a7bb1cab1f576e43cca6c97a5f0352f75c1",
+  "src/allocation_guard.py": "9d5026fd2c2a0274e33870cf1c3657b1e1781890fa603556274894846200356b",
+  "src/extend_maps.py": "57e9ed21d1ca1abca98ce5fc07a0761fc83042e148e9cd1182bf0e2b77dbfe1c",
+  "src/runtime_metrics.py": "5ecfa907bba81a890b55dc9f0a80a8d4c7ff4df52e941d79cecf791eae19e823",
+  "src/baseline/seed_two.py": "bf2d20187457f5ac99edea5ccbb496ccd8f2f7d5bb54cee8caf4463a9c46d1e4",
+  "src/baseline/base/meander_seed.py": "7cdf43c44c7a5ca253b2b970bb93e4e29c691e3a8594b501f203e5fe76e3f30b",
+  "src/baseline/base/meander_turbo.py": "c1e2c065011244be308b013e1cb8acf06c17b8598f2300e3897445cd6cc5c84c",
+  "src/baseline/base/scatter_kernels.py": "ca1c7e1abb7239594b32e6a6d3374b95bb3c1ae756ae58ec37fa6f68d7bd5d37",
+  "src/baseline/base/meander_closemaps_n25.pkl": "36b69e1c416c2e6888718b39aed0e391559dd16c720e1b39907174b3f848850a"
+}

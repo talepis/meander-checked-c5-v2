@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "repetitions_per_variant_per_order": 4,
+  "order": "baseline, checked, checked, baseline; each process warms all orders then measures twice",
+  "threads": 6,
+  "affinity": "same first 6 logical CPUs",
+  "RAM_pool_bytes": 8589934592,
+  "backend": "OpenMP",
+  "arithmetic": "same exact mixed integers",
+  "versions": {
+    "numpy": "2.3.5",
+    "numba": "0.68.0",
+    "psutil": "7.2.2"
+  },
+  "measured_JIT_seconds": 0,
+  "setup_and_JIT": "Preparation and warm-up precede measured repetitions; individual costs were not separately timed in this paired protocol.",
+  "matrix_read_write_bytes": [
+    0,
+    0
+  ],
+  "summary": [
+    {
+      "n": 20,
+      "baseline_median_seconds": 0.44784559999243356,
+      "checked_median_seconds": 0.42744615001720376,
+      "checked_change_percent": -4.555018509855735,
+      "baseline_seconds": [
+        0.42526980000548065,
+        0.4214992000197526,
+        0.48541200000909157,
+        0.4704213999793865
+      ],
+      "checked_seconds": [
+        0.42117400001734495,
+        0.41740769997704774,
+        0.4384371999767609,
+        0.4337183000170626
+      ],
+      "identical_coefficient_peak_bytes": 6684460,
+      "identical_layer_shapes_widths_caps": true,
+      "baseline_RSS_range_bytes": [
+        208187392,
+        212836352
+      ],
+      "checked_RSS_range_bytes": [
+        208846848,
+        213499904
+      ]
+    },
+    {
+      "n": 22,
+      "baseline_median_seconds": 0.8004320999898482,
+      "checked_median_seconds": 0.7855372499907389,
+      "checked_change_percent": -1.8608511576807318,
+      "baseline_seconds": [
+        0.8731285000103526,
+        0.7572136000089813,
+        0.8331374999834225,
+        0.767726699996274
+      ],
+      "checked_seconds": [
+        0.804212799994275,
+        0.7668616999872029,
+        0.8206405999953859,
+        0.7604723999975249
+      ],
+      "identical_coefficient_peak_bytes": 37565508,
+      "identical_layer_shapes_widths_caps": true,
+      "baseline_RSS_range_bytes": [
+        249540608,
+        260636672
+      ],
+      "checked_RSS_range_bytes": [
+        252522496,
+        259026944
+      ]
+    },
+    {
+      "n": 24,
+      "baseline_median_seconds": 1.9814568500005407,
+      "checked_median_seconds": 1.9336521999939578,
+      "checked_change_percent": -2.412601112488011,
+      "baseline_seconds": [
+        2.0173898999928497,
+        1.9257032999885269,
+        2.304377199994633,
+        1.9455238000082318
+      ],
+      "checked_seconds": [
+        1.924984500015853,
+        2.1922563000116497,
+        1.9353322999959346,
+        1.931972099991981
+      ],
+      "identical_coefficient_peak_bytes": 205464256,
+      "identical_layer_shapes_widths_caps": true,
+      "baseline_RSS_range_bytes": [
+        495595520,
+        501575680
+      ],
+      "checked_RSS_range_bytes": [
+        494616576,
+        500211712
+      ]
+    },
+    {
+      "n": 26,
+      "baseline_median_seconds": 7.410716650003451,
+      "checked_median_seconds": 7.4371425499994075,
+      "checked_change_percent": 0.3565903440113871,
+      "baseline_seconds": [
+        7.383016400010092,
+        7.321168700000271,
+        7.718474499997683,
+        7.43841689999681
+      ],
+      "checked_seconds": [
+        7.50415249998332,
+        9.134371000021929,
+        7.370132600015495,
+        7.331984499993268
+      ],
+      "identical_coefficient_peak_bytes": 1245548488,
+      "identical_layer_shapes_widths_caps": true,
+      "baseline_RSS_range_bytes": [
+        1610498048,
+        1628307456
+      ],
+      "checked_RSS_range_bytes": [
+        1596162048,
+        1615372288
+      ]
+    }
+  ],
+  "conclusion": "No material overhead observed in this small-order test. Not a speedup claim or an extrapolation to M31/M34. Initial separate sessions had a large timing confound even at M20 without compact blocks; use the interleaved final measurements, retaining preliminary data transparently."
+}

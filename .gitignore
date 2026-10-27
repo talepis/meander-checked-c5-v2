@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.nbc
+*.nbi
+*.so
+.cache/
+runs/
+src/*/project*/**/*.pkl
+src/modular/checked*/**/*.pkl
+src/independent/src/**/*.pkl

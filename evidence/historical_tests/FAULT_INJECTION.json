@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "test": "accepted",
+      "reader": "rectangle",
+      "flag": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "accepted",
+      "reader": "pairs",
+      "flag": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "cap_before_narrow_write",
+      "reader": "rectangle",
+      "flag": 4,
+      "status": "PASS"
+    },
+    {
+      "test": "cap_before_narrow_write",
+      "reader": "pairs",
+      "flag": 4,
+      "status": "PASS"
+    },
+    {
+      "test": "negative",
+      "reader": "rectangle",
+      "flag": 2,
+      "status": "PASS"
+    },
+    {
+      "test": "negative",
+      "reader": "pairs",
+      "flag": 2,
+      "status": "PASS"
+    },
+    {
+      "test": "nonintegral_identity",
+      "reader": "rectangle",
+      "status": "PASS"
+    },
+    {
+      "test": "nonintegral_identity",
+      "reader": "pairs",
+      "status": "PASS"
+    },
+    {
+      "test": "optimized_python_rejected_before_calculation",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "certificates": [
+    {
+      "n": 29,
+      "reconstructed_decimal": "116936079373841873422508566",
+      "moduli_product_decimal": "1077080006783590398598378654541161",
+      "upper_bound_decimal": "1004489460838247671927256271424",
+      "passes": 10,
+      "independent_of_C5_V2": true,
+      "scope": "Original independent modular transfer; historical audit of ten accepted runs. Independence from later optimizations, not from the combinatorial model.",
+      "records": [
+        {
+          "filename": "evidence/crt/M29/pass_0.json",
+          "sha256": "40bd765b7cadeb7f2b86048a04dd85ac920b6c0d4e256dda4db0058b4444d142",
+          "modulus_decimal": "2039",
+          "residue_decimal": "1780"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_1.json",
+          "sha256": "82b21c7787ac9a8d2a792d95d3efdd0446d4221f330ec17ed99fdf5447ae6b53",
+          "modulus_decimal": "2029",
+          "residue_decimal": "1076"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_2.json",
+          "sha256": "261b39f66238d3de359558e36f49844d78d3767aecadb2f1b632a57f27a713e0",
+          "modulus_decimal": "2027",
+          "residue_decimal": "1757"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_3.json",
+          "sha256": "5f8e3a748dd43c8499f1e40cde49a5dae71c8618b9dcc3fe0ef5db1eebf78fc4",
+          "modulus_decimal": "2017",
+          "residue_decimal": "1217"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_4.json",
+          "sha256": "d80cbf52cd56a95251eaf7fc35408df187832beddf461ee280aec4c4eaa1041f",
+          "modulus_decimal": "2011",
+          "residue_decimal": "245"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_5.json",
+          "sha256": "860410fbadb070f50f4ab705dc3fd0830f53f4bddf10f50318781a7576bebfd6",
+          "modulus_decimal": "2003",
+          "residue_decimal": "1071"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_6.json",
+          "sha256": "ac438b57a548aabf5e77fe7b5136438b18c1e181190a462ebdf6c65f63ee3e2a",
+          "modulus_decimal": "1999",
+          "residue_decimal": "1795"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_7.json",
+          "sha256": "383ddf8420ba908f14053f1b3688eafa5bf2466fb848bae45bebca76f12afd75",
+          "modulus_decimal": "1997",
+          "residue_decimal": "664"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_8.json",
+          "sha256": "4c3d13ae9310ae12de2baf672b1943b0364bddc875186c23cddf01a79d219fad",
+          "modulus_decimal": "1993",
+          "residue_decimal": "919"
+        },
+        {
+          "filename": "evidence/crt/M29/pass_9.json",
+          "sha256": "3857e0fe98f6912983169d948d3bf324eb8c97c4af88a7c10941cad81096ab86",
+          "modulus_decimal": "1987",
+          "residue_decimal": "1260"
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "reconstructed_decimal": "1279842888607976889797535044",
+      "moduli_product_decimal": "1077080006783590398598378654541161",
+      "upper_bound_decimal": "14554122011146473032169736028416",
+      "passes": 10,
+      "independent_of_C5_V2": true,
+      "scope": "Original independent modular transfer; historical audit of ten accepted runs. Independence from later optimizations, not from the combinatorial model.",
+      "records": [
+        {
+          "filename": "evidence/crt/M30/pass_0.json",
+          "sha256": "6bb743ec5020469863cfadbba276adcbb395cf76f44b6d1dd12c18f4ad8708b4",
+          "modulus_decimal": "2039",
+          "residue_decimal": "1632"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_1.json",
+          "sha256": "7e58f0201059de825d67d215408a990e5e9ce333fd1d70cf50c355fe80c4b299",
+          "modulus_decimal": "2029",
+          "residue_decimal": "972"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_2.json",
+          "sha256": "985091958285861b707eef55cfbf67e6cae64f7374439c8ad0a008ba0f97fe20",
+          "modulus_decimal": "2027",
+          "residue_decimal": "1653"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_3.json",
+          "sha256": "7404871bf650f4a9d32a04c4d5342f0e9b03dc82502f08528ff2fa66898a0830",
+          "modulus_decimal": "2017",
+          "residue_decimal": "217"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_4.json",
+          "sha256": "7a555f1d501b8c8310962c05b8373bc277d089a7ab08a22da421e5413152534f",
+          "modulus_decimal": "2011",
+          "residue_decimal": "344"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_5.json",
+          "sha256": "5b2124f7627876671d2be42b310a5a58e7bbdc2bac37bb1c01df33cb0980f488",
+          "modulus_decimal": "2003",
+          "residue_decimal": "1140"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_6.json",
+          "sha256": "55eac571f6b595d06edcffecaa6e36dcced1d66082ff934e76d384354babebe1",
+          "modulus_decimal": "1999",
+          "residue_decimal": "1188"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_7.json",
+          "sha256": "b85d906956efd0f13c44265c955358c23fc867c011243bf0420a1bed5d5bb14b",
+          "modulus_decimal": "1997",
+          "residue_decimal": "1211"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_8.json",
+          "sha256": "ce3c7a3217720db4a58a80816a1bf9c3034c47c6fa86576a372b86067b98fcfe",
+          "modulus_decimal": "1993",
+          "residue_decimal": "1562"
+        },
+        {
+          "filename": "evidence/crt/M30/pass_9.json",
+          "sha256": "ea715711d0a9225b26fc3951bfb16b907e793a8b732bf327f4ce7558c28bbf17",
+          "modulus_decimal": "1987",
+          "residue_decimal": "546"
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "reconstructed_decimal": "14058963484756608748809713192",
+      "moduli_product_decimal": "40022224185586450249873196016931444373",
+      "upper_bound_decimal": "211546437513578227158998389694281",
+      "passes": 3,
+      "independent_of_C5_V2": true,
+      "scope": "Original four-move transfer plus proved e0/e1 sources; no C5/V2/projected sources.",
+      "records": [
+        {
+          "filename": "evidence/crt/M31/pass_0.json",
+          "sha256": "ed1fb549b41e1245c2b9370092e63a52c4979c7449e038b409b3054b15a12495",
+          "modulus_decimal": "144115188075855871",
+          "residue_decimal": "91074630254075643"
+        },
+        {
+          "filename": "evidence/crt/M31/pass_1.json",
+          "sha256": "e04d4d0959d98f4dcdb4713083821a2bf0d9eb562911ee9bbc43a9c65825f84b",
+          "modulus_decimal": "144115188075855869",
+          "residue_decimal": "91074825361387681"
+        },
+        {
+          "filename": "evidence/crt/M31/pass_2.json",
+          "sha256": "40315da25b65440a14eec9b5cc3fc3f61680342ee693b3fc2ee45fed0e1bb398",
+          "modulus_decimal": "1927",
+          "residue_decimal": "1389"
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "reconstructed_decimal": "154967080111946539652848747626",
+      "moduli_product_decimal": "1329227995784915836010318912861241536",
+      "upper_bound_decimal": "3084032361768198286846885615047204",
+      "passes": 3,
+      "independent_of_C5_V2": false,
+      "scope": "V2 modular verification, shares V2 identities; not independent proof of those identities",
+      "records": [
+        {
+          "filename": "evidence/crt/M32/pass_0.json",
+          "sha256": "ac96cb3dcfcf30f1107a916c8791673abf88a2a7995d88644d8fbd2a699c5876",
+          "modulus_decimal": "144115188075855871",
+          "residue_decimal": "12817835304474481"
+        },
+        {
+          "filename": "evidence/crt/M32/pass_1.json",
+          "sha256": "faac74e96d996c69bac2c4e6b8d76a44fce1d2ba35ba622b4f802756698c9df9",
+          "modulus_decimal": "144115188075855869",
+          "residue_decimal": "12819985904729471"
+        },
+        {
+          "filename": "evidence/crt/M32/pass_2.json",
+          "sha256": "63222d74c57dd1d9bd03821ea0e4c4bb4cfa6dcc38e41afbe9033dad507789f6",
+          "modulus_decimal": "64",
+          "residue_decimal": "42"
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "reconstructed_decimal": "1713661620837603791268481065446",
+      "moduli_product_decimal": "1329227995784915836010318912861241536",
+      "upper_bound_decimal": "45086632278445113363072981742472100",
+      "passes": 3,
+      "independent_of_C5_V2": false,
+      "scope": "Checked V2 modular verification; shares C5/V2 identities, not independent verification of those identities",
+      "records": [
+        {
+          "filename": "evidence/crt/M33/pass_0.json",
+          "sha256": "5f935e8e1781a607f5ea2de1b7c4715905a304ee69bd227fa73c8591b6cf852a",
+          "modulus_decimal": "144115188075855871",
+          "residue_decimal": "119505355386751827"
+        },
+        {
+          "filename": "evidence/crt/M33/pass_1.json",
+          "sha256": "af00ce6bced037dd9c694c337c085f01918942fc34e0104061717cbdc5256fc7",
+          "modulus_decimal": "144115188075855869",
+          "residue_decimal": "119529137219100205"
+        },
+        {
+          "filename": "evidence/crt/M33/pass_2.json",
+          "sha256": "7a91f0f27e5ebdd011396b6525d1bd53510861a8b698974713c445ff36d4a936",
+          "modulus_decimal": "64",
+          "residue_decimal": "38"
+        }
+      ]
+    },
+    {
+      "n": 34,
+      "reconstructed_decimal": "19007633817297768906172279813820",
+      "moduli_product_decimal": "1329227995784915836010318912861241536",
+      "upper_bound_decimal": "660878015666743229018235477688023696",
+      "passes": 3,
+      "independent_of_C5_V2": false,
+      "scope": "Checked V2 modular verification; shares C5/V2 identities, not independent verification of those identities",
+      "records": [
+        {
+          "filename": "evidence/crt/M34/pass_0.json",
+          "sha256": "35cfa59660886a7ea2a725108b064fa1bd31193ca42abca69935f1fa8aa2ca30",
+          "modulus_decimal": "144115188075855871",
+          "residue_decimal": "53366533599234512"
+        },
+        {
+          "filename": "evidence/crt/M34/pass_1.json",
+          "sha256": "978ca23cee8447ae32c3cb560a2a0a29d0e7cb7fff6c84d3eab5082fac1c577c",
+          "modulus_decimal": "144115188075855869",
+          "residue_decimal": "53630317508079608"
+        },
+        {
+          "filename": "evidence/crt/M34/pass_2.json",
+          "sha256": "8362daa044d84cae492aa5119bd156e0146e7a098928002dcbd2a3af1806a390",
+          "modulus_decimal": "64",
+          "residue_decimal": "60"
+        }
+      ]
+    }
+  ]
+}

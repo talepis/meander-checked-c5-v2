@@ -1,0 +1,9 @@
+Release candidate 1.0.0-rc1 (2026-10-27)
+- Selected the checked C5/V2 exact numerical sources and separate modular
+  and original-transfer verification sources without modifying their
+  numerical kernels.
+- Added a resource-aware public command-line wrapper, historical CRT
+  numerical records, proof prerequisites, citation metadata and license.
+- Added public provenance and the standard-library historical CRT checker.
+- Excluded M35 while that computation remains unfinished.
+- This is a candidate package awaiting human review and public hosting.

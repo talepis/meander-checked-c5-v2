@@ -1,0 +1,78 @@
+METHOD AND VALIDATION SCOPE
+27 October 2026; Efthimios Alepis; release candidate 1.0.0-rc1.
+
+1. Objects and transfer
+A closed meander of order n is a connected non-self-intersecting closed
+curve crossing a fixed line at 2n points, counted up to the convention of
+OEIS A005315. Its two sides are noncrossing perfect matchings. Their union is
+one alternating cycle exactly when the composition/connectivity test has
+one component. A direct sum over Catalan(n)^2 pairs is prohibitively large.
+The transfer processes intersection positions, keeps the unfinished
+noncrossing connections and connectivity information, and combines equal
+states. For current upper/lower prefixes of scanned lengths a,b and shared
+height h, the nonnegative excess index is e=(t-a-b+h)/2. There are four
+local up/down boundary moves. The exact recurrence is the baseline; the
+proved e=0 and e=1 formulas replace low-excess layers.
+
+2. V2 acceleration
+At e=2, a proved mixed-profile identity reconstructs a block from an anchor
+row, anchor column and a bilinear correction involving a small matrix H.
+The profile and feature definitions, all coefficients and preconditions are
+in docs/proofs/CHECKED_V2_CORRECTNESS_EN.txt and its explicit prerequisites.
+The shortcut avoids repeated full recursive V2 evaluations and retains the
+mathematical result of the original transfer. The code predicts a tight
+per-block maximum to choose a compact integer width. The assertion that a
+global maximum always occurs at a common leaf level remains an unproved
+conjecture. Correctness of the *checked* implementation does not require it:
+consumed values are checked before use; if any prediction fails, the partial
+run is rejected and restarted under the unconditional bound
+
+ Uc=(k+1)(k+h+1)[8(k+2)(k+h+3)^2+4]*2^k,
+ k=(a+b-2h)/2.
+
+The proof gives this bound for arbitrary admissible prefix shapes. A
+successful run using the prediction is exact conditional on the cited
+transfer and mixed-identity proofs. A failed RAM guard yields no accepted
+answer. The source-width and overflow arguments are documented alongside
+the proof; the wider integer source is chosen for the audited top order.
+
+3. Terminal functional and storage
+Once both open prefix lengths reach the remaining intersections, only the
+closing moves survive. The boundary functional contracts the remaining
+connectivity without materializing large terminal coefficient matrices.
+Intermediate coefficient blocks live in RAM. A public guard rejects attempts
+to open coefficient-file storage. A precomputed closing map is verified by
+SHA-256 before use. This map is a speed aid, not an input Mn value.
+
+4. Exact and modular modes
+The default CLI computes exact integer M_n. The modular C5/V2 mode uses the
+same checked mathematical identities modulo a supplied modulus. The
+independent mode for n<=31 uses the separate original transfer, its proven
+low-excess sources and seed, without C5/V2 identities or a candidate answer
+as an input. That distinction matters for what each CRT run corroborates.
+The historical M29/M30 had ten accepted independent modular passes; M31 had
+three independent passes. M32/M33/M34 each had three checked-V2 passes and
+CRT reconstruction. For each order the public checker reads the preserved
+numerical records, checks their hashes, residue arithmetic, reconstruction,
+and that the modulus product exceeds Catalan(n)^2. A unique integer in that
+range follows if all residues were computed correctly. This is a repeatable
+computational certificate, not a formal or institutional attestation.
+
+5. Coverage and uncertainty
+Historical results in this archive cover M0..M34. The included b-file is a
+candidate OEIS extension, not a claim of OEIS acceptance. No M35 value is
+included. Historical timing/RSS values are measurements on specific
+machines with specific versions; the new public runner has a distribution
+bootstrap and should be benchmarked on its target host. Sampled RSS is
+process memory, distinct from logical coefficient-block allocation. Missing
+per-stage samples are left missing in the historical records. The CRT is
+not a proof of a conjectured global V2 maximizer, and the V2-based audits
+of M32-M34 are not independent of that mathematical identity.
+
+6. Reproduction
+Run the small exact example and the retained-record checker using README.
+Use tools/run_crt.py for new three-pass sequential tests. Keep one large
+job at a time and use a measured RAM budget. Exact operation depends on
+Python 3.12, pinned dependencies, OpenMP Numba and the platform C guard.
+See provenance for numerical source hashes and record transformations, and
+docs/proofs for the actual derivations and explicit assumptions.

@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "orders": [
+    {
+      "n": 32,
+      "max_axis": 30,
+      "max_ballot": 33266625,
+      "max_signature_bits": 90,
+      "max_source": 40600862720,
+      "max_context": 1849688064
+    },
+    {
+      "n": 33,
+      "max_axis": 31,
+      "max_ballot": 65132550,
+      "max_signature_bits": 96,
+      "max_source": 52500103168,
+      "max_context": 2030043136
+    },
+    {
+      "n": 34,
+      "max_axis": 32,
+      "max_ballot": 124062000,
+      "max_signature_bits": 102,
+      "max_source": 93189046272,
+      "max_context": 4060086272
+    }
+  ],
+  "above_uint32_projected_source": "PASS",
+  "above_uint32_context": "PASS",
+  "small_runs": [
+    {
+      "n": 6,
+      "Mn": "1828",
+      "seconds": 14.027882499998668
+    },
+    {
+      "n": 12,
+      "Mn": "678390116",
+      "seconds": 4.258765700011281
+    },
+    {
+      "n": 20,
+      "Mn": "64477712119584604",
+      "seconds": 6.636997000023257
+    },
+    {
+      "n": 22,
+      "Mn": "7060941974458061392",
+      "seconds": 9.059924699977273
+    },
+    {
+      "n": 24,
+      "Mn": "794337831754570367812",
+      "seconds": 6.162612099986291
+    }
+  ],
+  "full_M32_M34_rerun": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "all_ballot_prefix_lengths": [
+    0,
+    9
+  ],
+  "equal_height_pairs": 12774,
+  "V1_source_and_coarse_V2_checks": 38322,
+  "seconds": 0.1926171999948565,
+  "arithmetic": "Python arbitrary precision",
+  "scope": "Finite regression; the proof is the written recurrence argument, not this enumeration."
+}

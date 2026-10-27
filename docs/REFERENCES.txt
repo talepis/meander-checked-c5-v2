@@ -1,0 +1,23 @@
+REFERENCES AND PRIORITY NOTES (checked 27 October 2026)
+
+OEIS A005315, closed meandric numbers: https://oeis.org/A005315
+Its linked Howroyd/Jensen b-file lists n=0..28. The first n=0..28
+values in our b-file were compared with that reference.
+OEIS A005316, meandric numbers: https://oeis.org/A005316
+The A005316 record is related but indexes a different convention: for closed
+M_n inspect its even/odd mapping carefully; do not copy a value by label alone.
+OEIS policy on AI-assisted submissions:
+https://oeis.org/wiki/Use_of_AI_for_OEIS_Submissions
+
+This candidate package does not assert discovery priority for every value.
+Existing work by Jensen, Howroyd and subsequent researchers must be cited
+when submitting new terms. Recheck OEIS and the current literature on the
+actual submission date; earlier availability can change. In particular,
+a successful independent modular audit supports arithmetic confidence but
+is not a claim that the sequence term has never been published.
+
+The local derivation and exact implementation prerequisites are supplied in
+docs/proofs. Formal mathematical attribution must be completed by the human
+author before journal, preprint or OEIS submission. Historical performance
+claims compare particular machines and source versions; they are not
+portable theoretical complexity bounds.

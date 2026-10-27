@@ -1,0 +1,15 @@
+{
+  "release": "1.0.0-rc1",
+  "host": "Windows x64",
+  "date": "2026-10-27",
+  "small_run_results": [
+    {"mode": "exact", "n": 8, "result": "110954", "status": "PASS"},
+    {"mode": "exact", "n": 8, "proved_cap": true, "result": "110954", "status": "PASS"},
+    {"mode": "modular", "n": 6, "modulus": 1927, "residue": 1828, "status": "PASS"},
+    {"mode": "independent", "n": 6, "modulus": 1927, "residue": 1828, "status": "PASS"},
+    {"mode": "independent", "n": 3, "passes": 3, "CRT_result": "8", "status": "PASS"}
+  ],
+  "historical_records": "PUBLIC_CERTIFICATES_AND_TABLE_PASS for M29..M34",
+  "Linux_public_wrapper_test": "Not rerun in this task: WSL/E_ACCESSDENIED. Underlying Linux implementation was validated previously; this exact distribution wrapper is tested on Windows only.",
+  "timing_scope": "Small smoke tests include fresh Python/JIT startup and do not benchmark large orders."
+}

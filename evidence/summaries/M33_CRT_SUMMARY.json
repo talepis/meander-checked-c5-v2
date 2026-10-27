@@ -1,0 +1,87 @@
+{
+  "status": "M33_V2_CRT_AND_RECORD_CHECKS_PASS",
+  "n": 33,
+  "Mn": "1713661620837603791268481065446",
+  "passes": 3,
+  "records": [
+    {
+      "modulus_decimal": "144115188075855871",
+      "residue_decimal": "119505355386751827",
+      "wall_seconds": 3512.6535070380196,
+      "math_seconds": 3512.616704438813,
+      "additional_compile_seconds": 15.048329250887036,
+      "setup_seconds": 119.88115701638162,
+      "sampled_peak_RSS_bytes": 696582459392,
+      "process_lifetime_maxRSS_bytes": 696599785472,
+      "matrix_disk_read_bytes": 0,
+      "matrix_disk_write_bytes": 0,
+      "matrix_disk_peak_bytes": 0,
+      "peak_retained_coefficient_layer_bytes": 473148885544
+    },
+    {
+      "modulus_decimal": "144115188075855869",
+      "residue_decimal": "119529137219100205",
+      "wall_seconds": 3527.994051186368,
+      "math_seconds": 3527.9675574889407,
+      "additional_compile_seconds": 0,
+      "setup_seconds": 119.86343235243112,
+      "sampled_peak_RSS_bytes": 696179118080,
+      "process_lifetime_maxRSS_bytes": 696262074368,
+      "matrix_disk_read_bytes": 0,
+      "matrix_disk_write_bytes": 0,
+      "matrix_disk_peak_bytes": 0,
+      "peak_retained_coefficient_layer_bytes": 473148885544
+    },
+    {
+      "modulus_decimal": "64",
+      "residue_decimal": "38",
+      "wall_seconds": 3528.7369517842308,
+      "math_seconds": 3528.7042114082724,
+      "additional_compile_seconds": 7.310735473409295,
+      "setup_seconds": 117.71260510571301,
+      "sampled_peak_RSS_bytes": 507921915904,
+      "process_lifetime_maxRSS_bytes": 507990204416,
+      "matrix_disk_read_bytes": 0,
+      "matrix_disk_write_bytes": 0,
+      "matrix_disk_peak_bytes": 0,
+      "peak_retained_coefficient_layer_bytes": 343677783490
+    }
+  ],
+  "sum_wall_seconds": 10569.384510008618,
+  "sum_math_seconds": 10569.288473336026,
+  "peak_observed_RSS_bytes": 696599785472,
+  "moduli_product_decimal": "1329227995784915836010318912861241536",
+  "Catalan_squared_bound_decimal": "45086632278445113363072981742472100",
+  "source_integrity": {
+    "status": "PASS",
+    "protected_files": 1353
+  },
+  "independent_of_V2_identities": false,
+  "all_matrices_remained_in_RAM": true,
+  "execution_location": "university Linux server",
+  "threads": 16,
+  "M33_series_elapsed_seconds": 10956.766076087952,
+  "sum_setup_seconds": 357.45719447452575,
+  "sum_warmup_seconds": 26.119171026162803,
+  "local_certificate_check": {
+    "status": "CRT_RECORDS_AND_UNIQUENESS_PASS",
+    "n": 33,
+    "variant": "v2",
+    "reconstructed_decimal": "1713661620837603791268481065446",
+    "passes": 3
+  },
+  "bundle_SHA256": "fbce5ec71012d84a6df1f215b0619ff8a3a5904116ec4cae266f4ca0c4b99b84",
+  "deployed_manifest_SHA256": "9f35ab3c7eb995950880d1aab2918006aa63adbc0abdc74b8ee8edc78246559e",
+  "historical_exact_M33": {
+    "wall_seconds": 3533.8438135096803,
+    "math_seconds": 3533.8370592184365,
+    "RSS_bytes": 696389455872,
+    "scope": "Previous single non-modular native run, not CRT or an independent M33 verifier"
+  },
+  "vs_previous_exact": {
+    "sum_calls_time_ratio": 2.990903126392421,
+    "peak_RSS_ratio": 1.0003020286970552
+  },
+  "M33_series_started_local": "2026-10-24T21:29:51.281506+03:00",
+  "completed_local": "2026-10-25T00:32:28.047582+03:00"
+}

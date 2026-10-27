@@ -1,0 +1,9 @@
+{
+  "title": "Checked C5/V2 closed meander computation and modular audit",
+  "description": "Audited exact CPU/RAM code, conditional checked V2 acceleration, historical CRT evidence, and reproducibility notes for closed meander numbers through M34.",
+  "creators": [{"name": "Alepis, Efthimios", "orcid": "0000-0002-3862-7218"}],
+  "license": "MIT",
+  "keywords": ["closed meanders", "combinatorics", "transfer matrix", "CRT"],
+  "upload_type": "software",
+  "version": "1.0.0-rc1"
+}

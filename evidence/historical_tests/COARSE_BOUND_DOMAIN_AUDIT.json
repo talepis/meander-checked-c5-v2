@@ -1,0 +1,251 @@
+{
+  "status": "ALL_SUPPORTED_SCALAR_ARITHMETIC_CHECKS_PASS",
+  "orders": [
+    1,
+    34
+  ],
+  "V2_geometries_checked": 11559,
+  "records": [
+    {
+      "n": 1,
+      "V2_keys": 0,
+      "max_proved_coarse_cap": 0,
+      "max_signed_contraction_certificate": 0,
+      "max_source_certificate": 0
+    },
+    {
+      "n": 2,
+      "V2_keys": 0,
+      "max_proved_coarse_cap": 0,
+      "max_signed_contraction_certificate": 0,
+      "max_source_certificate": 0
+    },
+    {
+      "n": 3,
+      "V2_keys": 1,
+      "max_proved_coarse_cap": 520,
+      "max_signed_contraction_certificate": 1560,
+      "max_source_certificate": 68
+    },
+    {
+      "n": 4,
+      "V2_keys": 3,
+      "max_proved_coarse_cap": 3104,
+      "max_signed_contraction_certificate": 9312,
+      "max_source_certificate": 148
+    },
+    {
+      "n": 5,
+      "V2_keys": 6,
+      "max_proved_coarse_cap": 28944,
+      "max_signed_contraction_certificate": 86992,
+      "max_source_certificate": 512
+    },
+    {
+      "n": 6,
+      "V2_keys": 10,
+      "max_proved_coarse_cap": 55488,
+      "max_signed_contraction_certificate": 166624,
+      "max_source_certificate": 1840
+    },
+    {
+      "n": 7,
+      "V2_keys": 15,
+      "max_proved_coarse_cap": 184832,
+      "max_signed_contraction_certificate": 555240,
+      "max_source_certificate": 2768
+    },
+    {
+      "n": 8,
+      "V2_keys": 22,
+      "max_proved_coarse_cap": 942400,
+      "max_signed_contraction_certificate": 2831568,
+      "max_source_certificate": 9216
+    },
+    {
+      "n": 9,
+      "V2_keys": 30,
+      "max_proved_coarse_cap": 1476480,
+      "max_signed_contraction_certificate": 4433808,
+      "max_source_certificate": 21824
+    },
+    {
+      "n": 10,
+      "V2_keys": 40,
+      "max_proved_coarse_cap": 4133376,
+      "max_signed_contraction_certificate": 12415008,
+      "max_source_certificate": 31360
+    },
+    {
+      "n": 11,
+      "V2_keys": 52,
+      "max_proved_coarse_cap": 16269568,
+      "max_signed_contraction_certificate": 48867744,
+      "max_source_certificate": 98304
+    },
+    {
+      "n": 12,
+      "V2_keys": 66,
+      "max_proved_coarse_cap": 22951936,
+      "max_signed_contraction_certificate": 68914848,
+      "max_source_certificate": 190208
+    },
+    {
+      "n": 13,
+      "V2_keys": 82,
+      "max_proved_coarse_cap": 59015168,
+      "max_signed_contraction_certificate": 177220224,
+      "max_source_certificate": 290304
+    },
+    {
+      "n": 14,
+      "V2_keys": 101,
+      "max_proved_coarse_cap": 200807424,
+      "max_signed_contraction_certificate": 603002432,
+      "max_source_certificate": 819200
+    },
+    {
+      "n": 15,
+      "V2_keys": 122,
+      "max_proved_coarse_cap": 265512960,
+      "max_signed_contraction_certificate": 797119040,
+      "max_source_certificate": 1401856
+    },
+    {
+      "n": 16,
+      "V2_keys": 146,
+      "max_proved_coarse_cap": 649011200,
+      "max_signed_contraction_certificate": 1948616160,
+      "max_source_certificate": 2230272
+    },
+    {
+      "n": 17,
+      "V2_keys": 173,
+      "max_proved_coarse_cap": 2010714112,
+      "max_signed_contraction_certificate": 6036879936,
+      "max_source_certificate": 5898240
+    },
+    {
+      "n": 18,
+      "V2_keys": 203,
+      "max_proved_coarse_cap": 2543861760,
+      "max_signed_contraction_certificate": 7636322880,
+      "max_source_certificate": 9285632
+    },
+    {
+      "n": 19,
+      "V2_keys": 236,
+      "max_proved_coarse_cap": 6012665856,
+      "max_signed_contraction_certificate": 18050249808,
+      "max_source_certificate": 15228928
+    },
+    {
+      "n": 20,
+      "V2_keys": 273,
+      "max_proved_coarse_cap": 17446813696,
+      "max_signed_contraction_certificate": 52374703008,
+      "max_source_certificate": 38535168
+    },
+    {
+      "n": 21,
+      "V2_keys": 313,
+      "max_proved_coarse_cap": 21377155072,
+      "max_signed_contraction_certificate": 64165727136,
+      "max_source_certificate": 57098240
+    },
+    {
+      "n": 22,
+      "V2_keys": 357,
+      "max_proved_coarse_cap": 49331437568,
+      "max_signed_contraction_certificate": 148079645952,
+      "max_source_certificate": 95846400
+    },
+    {
+      "n": 23,
+      "V2_keys": 405,
+      "max_proved_coarse_cap": 136382054400,
+      "max_signed_contraction_certificate": 409373526336,
+      "max_source_certificate": 234881024
+    },
+    {
+      "n": 24,
+      "V2_keys": 457,
+      "max_proved_coarse_cap": 163090268160,
+      "max_signed_contraction_certificate": 489498167616,
+      "max_source_certificate": 332333056
+    },
+    {
+      "n": 25,
+      "V2_keys": 513,
+      "max_proved_coarse_cap": 369669177344,
+      "max_signed_contraction_certificate": 1109558162112,
+      "max_source_certificate": 568197120
+    },
+    {
+      "n": 26,
+      "V2_keys": 574,
+      "max_proved_coarse_cap": 984647729152,
+      "max_signed_contraction_certificate": 2955358269696,
+      "max_source_certificate": 1358954496
+    },
+    {
+      "n": 27,
+      "V2_keys": 639,
+      "max_proved_coarse_cap": 1155191537664,
+      "max_signed_contraction_certificate": 3466989695232,
+      "max_source_certificate": 1854144512
+    },
+    {
+      "n": 28,
+      "V2_keys": 709,
+      "max_proved_coarse_cap": 2582183411712,
+      "max_signed_contraction_certificate": 7749903848256,
+      "max_source_certificate": 3217555456
+    },
+    {
+      "n": 29,
+      "V2_keys": 784,
+      "max_proved_coarse_cap": 6677752446976,
+      "max_signed_contraction_certificate": 20041637873088,
+      "max_source_certificate": 7549747200
+    },
+    {
+      "n": 30,
+      "V2_keys": 864,
+      "max_proved_coarse_cap": 7714562375680,
+      "max_signed_contraction_certificate": 23152067659200,
+      "max_source_certificate": 10002366464
+    },
+    {
+      "n": 31,
+      "V2_keys": 949,
+      "max_proved_coarse_cap": 17053201203200,
+      "max_signed_contraction_certificate": 51179124928560,
+      "max_source_certificate": 17572036608
+    },
+    {
+      "n": 32,
+      "V2_keys": 1040,
+      "max_proved_coarse_cap": 43055189065728,
+      "max_signed_contraction_certificate": 129213271196384,
+      "max_source_certificate": 40600862720
+    },
+    {
+      "n": 33,
+      "V2_keys": 1136,
+      "max_proved_coarse_cap": 49112741314560,
+      "max_signed_contraction_certificate": 147385927942880,
+      "max_source_certificate": 52500103168
+    },
+    {
+      "n": 34,
+      "V2_keys": 1238,
+      "max_proved_coarse_cap": 107580105949184,
+      "max_signed_contraction_certificate": 322849885545792,
+      "max_source_certificate": 93189046272
+    }
+  ],
+  "source_prediction_independent": true,
+  "global_maximum_conjecture_used": false,
+  "scope": "Pure integer domain checks. Validity of the formulas is supplied by the proof; tests of the maximum conjecture are not used."
+}
